@@ -1,0 +1,61 @@
+# go-signer-example
+
+## Run
+**RSA:**
+```
+$ go run rsa/rsa.go
+[*] Private key:
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAtZBLnQ6BhVUxDJA0Gavmvpu6cpHajFJi7js2VmSNqNjHgzBn
+d/NrcDTZ3x1jbHGzyzcFzwcJ5F0iYGpl5UrRLRoKWRaE4h4cE7MByT6r3jlfzA9x
+VyPesBuj+ge4ItW3CUWtj0jWsklT+GcM0HTWZXr/g+Uusm10RIAcnFLB3Fg9h6+F
+42zncxrTJPmR4RGoFQsBh/YHaTj75Kc50s9qCn6iRcnbWGiHgs18u0mP0g6YvVnp
+0EUWGuDvTQ+AGc+WCo9Nex85vuJBA/OAvWVQFCP51ywVBCGc+L2J+gcvoB1vAuIq
+TdTK6IPuOwaDs2f8IFMwYoNqpdpTtiSLghlcFwIDAQABAoIBAH/mqU13RYh+rfHS
+t9EJxp+ppltFIfbNpsF51tpfNWenZkylUY4vXRULNhu1YS+onWZfWWkw5SgI78mJ
+ykQPQ3GJMZb2hR+g5FiANpbk3j/KnRBsJISlUR8wKYBd5bosYSdX/V69ifjILS4E
+sgM6+zk7vznTveSVtFz4/q6kocos8uRAqC9uPO+tdzjNPB/k1h1mk3qIiHdRg22E
+JuU3UaGU9U3iFCx0cdEGpeZBGHcdGYb2doVHtmbxjjuith/4so09Ykx/hBX+OQkq
+v6PG4MppwLxOe/kJnTsV9RbCyphH7xUr0YOAiTOlnexveu6oFsOZdgNyZpYE5x0S
+08kA32kCgYEAzF7QaQpxOsaIeQvMvxn2cynBtZ7UOS+9KHXDAdAV+HEiJiwntK+I
+fjDur3UauCQMCVYGNYiI9MPIN1rZEM7Vh09d6INizaU5h5WEJ3oVVc03vV2Brvue
+PAY0vBDvzSqy/lpM//GBvtlkdUqAB0k3SBrodJLECT1TbApnZ8ZjEM0CgYEA426C
+XPcGJxaAtq14aKkleeYNsAEhkS9gB6D/zDqP7bRGGv1q+iKdNJz8rd90aacon6Z/
+JEluLd5Ukjuiq6zSIUkR48jUx1HS0/k6yx4GPdHzpMW/n6TQmRwVKogaV/03sema
+20IZ9kspHLageUlf0rFYvIb/0dw+opcd8ky8EHMCgYEAm6Bv8C1FgE6CyjqUFco9
+hAD+Q8HJNisGTnMupojA0knEiXECY3Nv6zhz6iSwzhyVFd7uJ4HrWQhlxNFnjocS
+z1E+37p9WMBDCN5wnmc3K/l0Qr2b7ZYqLudC7RuwoHmtiEdXb2eHN7/v4elziRjW
+AhCLh4njwm1yw0lA6SOHeNkCgYEAh7unb+Y5tNBYRy4mg4gXhrXHC3jRWL3GeScc
+Iv38cig6Atelpd1Mp17d6sNGzdtmgkmy7awpZpSfMpsGzaCZ1CWw2Jo+ayqpQbsn
+3JtxrCmGWJtwbs3FdOtusnCCEGtedv7tXdgIeJaI1csk4N3qo2sWg4WqXcwtUYoQ
+5E/pmYMCgYEAvyaLfJuTc2VhaxR/Ra4zkO2tqwVs5pURUge44L0lr7CJf3IFeYiL
+BP2UoZxVAOhKiyjXPPKy2ogT6UyHGeGTZNxSdUrmvSlEPhVMuECMXjD3amyeWg+F
+quL0R9UC/6o0uwfYdHiPPpoRA1h0Bx9u9wsjhFpXHacMxg/gN3ek0OM=
+-----END RSA PRIVATE KEY-----
+
+[*] Signature:
+44d2ef16d97fe18e144189b575f48b36bd48866a3e5fdbf115fa17c5b9a146b67cb98880a13c2109f0af05f20a360f47df40f1b23d5172f1e0d3edf06e2722d6215595078fd396df46d8017f4b68fb5103e9bd0887d7ded98e7cdf65853b413c87b843d78b2b2a45111241387d6a0b1bb0730923ab4ac602a887385557d995d41e5b6f56d0189270a976ca944d1eb9c64789ddf4cf88bb775f70fc807c2db99239738059d40ed103da555984e7691345effff4b062a9b02663a3ccf7119717cf2ef78957ef6331cf74e74fc31954b7186485a1f677f3463361fe586b519ef49c0d87d642a0d4fa430ce97a08a02dc897390ca056bdcd35a1fa5126afab5e9942
+[*] Result:
+signature is a valid signature of message from the public key.
+
+```
+
+**ECDSA:**
+```
+$ go run ecdsa/ecdsa.go
+[*] Private key:
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIBFZcHSgpBRTkWDd0AdWEEXsUAW/LsP3msGSPqMiRUUloAoGCCqGSM49
+AwEHoUQDQgAEK6krIT8I6gSj28blHABchGlkJCouwed4ktvw6ButRjagaERfb4K/
+3lI0eVbiFhMx/9D0H8EqdzPdZVDoMWkmWw==
+-----END EC PRIVATE KEY-----
+
+[*] Signature:
+3046022100b35641da22e7abe22eb003a8af0ff7d6182b782827815540b2f30a1e278de1d4022100b1420e18b2fccc13c20c77153e748e72ef7792173a8c76d9b8467bb5066ad7ec
+[*] Result:
+true
+```
+
+## References 
+- https://pkg.go.dev/crypto/rsa@go1.21.5
+- https://pkg.go.dev/crypto/ecdsa@go1.21.5
